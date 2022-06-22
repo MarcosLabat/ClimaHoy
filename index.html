@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="icon" href="img/logo.png">
+    <title>Clima</title>
+</head>
+<body>
+    <section id="contenedor" class="ocultar"></section>
+    <div class="loader" id="spinner">Loading...</div>
+
+    <div class="contenedor contenedordos ocultar">
+        <div id="resultado"></div>
+        <form id="formulario" class="formulario" action="#" method="POST">
+            <div class="formulario__cont">
+                <input type="text" name="ciudad" id="ciudad" placeholder="Escribe tu Ciudad" class="formulario__input">
+            </div>
+            <div class="contenedor__paises">
+                <select class="paises__select" id="pais">
+                    <option disabled selected value="">-- Seleccione --</option>
+                    <option value="AR">Argentina</option>
+                    <option value="CO">Colombia</option>
+                    <option value="PY">Paraguay</option>
+                    <option value="ES">España</option>
+                    <option value="US">Estados Unidos</option>
+                    <option value="MX">México</option>
+                    <option value="PE">Perú</option>
+                    <option value="UY">Uruguay</option>
+                    <option value="UK">Reino Unido</option>
+                </select>
+            </div>
+            <input type="submit" class="paises__boton" value="Obtener Clima">
+        </form>
+    </div>
+    <script src="js/app.js" type="module"></script>
+</body>
+</html>
